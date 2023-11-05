@@ -1,0 +1,76 @@
+.c-followCard {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .c-followCard__header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+  }
+  
+  .c-followCard__info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .c-followCard__infoUserName {
+    opacity: .6;
+  }
+  
+  .c-followCard__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+  }
+  
+  .c-followCard__button {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+  }
+  
+  .c-followCard__button:hover {
+    opacity: .8;
+  }
+  
+  .c-followCard__text {
+    display: block;
+  }
+  
+  .c-followCard__button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+  }
+  
+  .c-followCard__button.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+  }
+  
+  .c-followCard__button.is-following:hover .c-followCard__text {
+    display: none;
+  }
+  
+  .c-followCard__button.is-following:hover .c-followCard__stopFollow {
+    display: block;
+  }
+  
+  .c-followCard__stopFollow {
+    display: none;
+  }
