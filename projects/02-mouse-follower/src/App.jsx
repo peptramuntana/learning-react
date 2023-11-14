@@ -18,7 +18,6 @@ function App() {
     }
 
     return () => {
-      console.log('clean up')
       window.removeEventListener('pointermove', handleMove);
     }
     
